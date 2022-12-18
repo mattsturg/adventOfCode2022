@@ -1,3 +1,5 @@
+# Some of my worst code. However, it works!
+
 class Player:
     choice = ""
 
