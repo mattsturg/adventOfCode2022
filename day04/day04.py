@@ -1,7 +1,4 @@
 class Elf:
-    start = 0
-    finish = 0
-
     def __init__(self, parse):
         temp = parse.split('-')
         self.start = int(temp[0])
