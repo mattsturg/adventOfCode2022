@@ -37,4 +37,4 @@ def test_day07_p2_mini(tester_list):
 
 
 def test_day07_p2(real_list):
-    assert day07.total_dir_size(real_list, True) == 3697
+    assert day07.total_dir_size(real_list, True) == 8278005
