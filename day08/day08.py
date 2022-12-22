@@ -21,8 +21,6 @@ class Forest:
                 our_height = self.tree_heights[i][j]
                 count_visible_trees = 0
                 temp_j = j-1
-                # if temp_j-1 > -1:
-                #     count_visible_trees += 1
                 while temp_j > -1:
                     count_visible_trees += 1
                     if our_height <= self.tree_heights[i][temp_j]:
