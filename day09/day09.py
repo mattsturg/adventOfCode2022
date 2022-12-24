@@ -44,6 +44,16 @@ class LinkedRope:
         self.tail_location = [0, 0]
         self.direction_dict = {"U": [0, 1], "D": [0, -1], "R": [1, 0], "L": [-1, 0]}
 
+    def take_instructions(self, ins):
+        direction, dist = ins.split()
+        for _ in range(int(dist)):
+            # Move head
+            dir_val = self.direction_dict[direction]
+            self.head_location = [dir_val[0] + self.head_location[0], dir_val[1] + self.head_location[1]]
+
+            # Adjust tail
+            self.move_tail()
+
     def move_tail(self):
         # Check head adjacency
         if self.head_location[0] in range(self.tail_location[0]-1, self.tail_location[0]+2) and \
